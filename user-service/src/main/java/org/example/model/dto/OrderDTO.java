@@ -7,7 +7,6 @@ import lombok.Data;
 import org.example.model.enums.OrderStatus;
 
 import java.time.LocalDateTime;
-import java.util.UUID;
 
 @Data
 @Builder
