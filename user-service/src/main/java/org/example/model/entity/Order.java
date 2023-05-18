@@ -10,7 +10,7 @@ import org.example.model.enums.OrderStatus;
 import javax.persistence.*;
 import java.time.LocalDateTime;
 import java.util.Set;
-import java.util.UUID;
+
 
 @Builder
 @NoArgsConstructor
@@ -18,12 +18,12 @@ import java.util.UUID;
 @Getter
 @Setter
 @Entity
-@Table(name = "orders")
+@Table(name = "orders", schema = "ecommerce")
 public class Order {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private UUID id;
+    private Long id;
 
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER, mappedBy = "order")
     private Set<OrderItem> orderItems;

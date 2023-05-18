@@ -14,13 +14,13 @@ import java.util.UUID;
 public class OrderDTO {
 
     @Schema(description = "id", example = "1")
-    private UUID id;
+    private Long id;
 
     @Schema(description = "Order requester")
-    private UUID requester;
+    private Long requester;
 
     @Schema(description = "Responsible", required = true)
-    private UUID responsible;
+    private Long responsible;
 
     @Schema(description = "Order status: Approved, In progress, Received, Pending approval, Rejected", example = "Approved")
     private OrderStatus status;

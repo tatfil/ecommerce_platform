@@ -1,9 +1,7 @@
 package org.example.model.entity;
 
-import java.util.UUID;
-
 public class Rating {
-    private UUID id;
+    private Long id;
 
     private Integer starRating;
 

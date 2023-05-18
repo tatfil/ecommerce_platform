@@ -16,7 +16,7 @@ import java.util.UUID;
 @AllArgsConstructor
 public class OrderCreationDto {
 
-    private UUID responsibleId;
+    private Long responsibleId;
 
     private String comment;
 }

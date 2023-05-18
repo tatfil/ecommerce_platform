@@ -19,16 +19,16 @@ import java.util.UUID;
 @Getter
 @Setter
 @Entity
-@Table(name = "ratings")
+@Table(name = "ratings", schema = "ecommerce")
 public class Rating {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private UUID id;
+    private Integer id;
 
-    private UUID userId;
+    private Integer userId;
 
-    private UUID itemId;
+    private Integer itemId;
 
     private Integer starRating;
 

@@ -14,9 +14,9 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import java.math.BigDecimal;
-import java.util.UUID;
+
 @Entity
-@Table(name = "users")
+@Table(name = "users", schema = "ecommerce")
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
@@ -26,7 +26,7 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id")
-    private UUID id;
+    private Long id;
 
     private String userName;
 
