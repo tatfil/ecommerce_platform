@@ -26,6 +26,10 @@ public class Rating {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private UUID id;
 
+    private UUID userId;
+
+    private UUID itemId;
+
     private Integer starRating;
 
     private String review;
