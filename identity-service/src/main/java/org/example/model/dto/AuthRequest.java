@@ -11,6 +11,6 @@ import javax.persistence.Entity;
 @Setter
 public class AuthRequest {
 
-    private String Username;
+    private String username;
     private String password;
 }

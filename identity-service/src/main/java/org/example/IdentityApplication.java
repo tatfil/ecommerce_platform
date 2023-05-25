@@ -8,8 +8,8 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 @SpringBootApplication
 @EnableEurekaClient
 @EnableJpaRepositories
-public class ServiceRegistryApplication {
+public class IdentityApplication {
     public static void main(String[] args) {
-        SpringApplication.run(ServiceRegistryApplication.class, args);
+        SpringApplication.run(IdentityApplication.class, args);
     }
 }
